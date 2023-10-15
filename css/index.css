@@ -1509,7 +1509,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url(https://i2.hdslb.com/bfs/archive/0b7f4dc005fdbe512af38f1ed7cb3b702666ee18.jpg);
+  background: url(https://cdn.max-c.com/heybox/dailynews/img/ba0e1d445d294941cfc04e864d1b4c9a.png?imageMogr2/format/jpg);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -3514,13 +3514,6 @@ h1.page-title + .tag-cloud-list {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
-}
-#page-header:not(.not-top-img):before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--mark-bg);
-  content: '';
 }
 #page-header.full_page {
   height: 100vh;
