@@ -23,7 +23,7 @@ for(var i = 0;i<arr.length;i++){
 var arr = document.getElementsByClassName("card-widget");
 for(var i = 0;i<arr.length;i++){
     arr[i].classList.add("wow");
-    arr[i].classList.add("animate__slideInRight");
+    arr[i].classList.add("animate__zoomIn");
   }
 //初始化函数
 wow = new WOW({
