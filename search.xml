@@ -8,8 +8,14 @@
       <link href="/2023/10/17/Next/"/>
       <url>/2023/10/17/Next/</url>
       
-        <content type="html"><![CDATA[<h2 id="这是我的第二篇文章"><a href="#这是我的第二篇文章" class="headerlink" title="这是我的第二篇文章"></a>这是我的第二篇文章</h2>]]></content>
+        <content type="html"><![CDATA[<h2 id="这是我的第二篇文章"><a href="#这是我的第二篇文章" class="headerlink" title="这是我的第二篇文章"></a>这是我的第二篇文章</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">package com.yc;</span><br><span class="line"></span><br><span class="line">import org.mybatis.spring.annotation.MapperScan;</span><br><span class="line">import org.springframework.boot.SpringApplication;</span><br><span class="line">import org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line">import springfox.documentation.swagger2.annotations.EnableSwagger2;</span><br><span class="line"></span><br><span class="line">@SpringBootApplication</span><br><span class="line">@EnableSwagger2</span><br><span class="line">@MapperScan(&quot;com.yc.dao&quot;)</span><br><span class="line">public class ResApp &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(ResApp.class,args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h2><p>。<br>。<br>。<br>。<br>。<br>。<br>。<br>。。<br>。<br>。。<br>。<br>。</p><p>。<br>。<br>。<br>。<br>。<br>。<br>。</p><h2 id="第三部分"><a href="#第三部分" class="headerlink" title="第三部分"></a>第三部分</h2>]]></content>
       
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
       
       
     </entry>
