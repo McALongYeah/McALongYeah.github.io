@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Spring</title>
+      <link href="/2023/10/30/Spring/"/>
+      <url>/2023/10/30/Spring/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Spring </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SpringBoot</title>
+      <link href="/2023/10/30/SpringBoot/"/>
+      <url>/2023/10/30/SpringBoot/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> SpringBoot </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot-几种Controller测试方法</title>
       <link href="/2023/10/25/SpringBoot%20-%E5%87%A0%E7%A7%8DController%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/"/>
       <url>/2023/10/25/SpringBoot%20-%E5%87%A0%E7%A7%8DController%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95/</url>
