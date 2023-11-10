@@ -8,7 +8,7 @@
       <link href="/2023/11/04/Docker/"/>
       <url>/2023/11/04/Docker/</url>
       
-        <content type="html"><![CDATA[<p>s</p><h2 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h2><blockquote><p>Docker是一种<strong>轻量级的虚拟化技术</strong>，同时是一个开源的应用容器运行环境搭建平台，可以让开发者以便捷方式打包应用到一个可移植的容器中，然后安装至任何运行Linux或Windows等系统的服务器上。 相较于传统虚拟机，Docker容器提供轻量化的虚拟化方式、安装便捷、启停速度快。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h2 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h2><blockquote><p>Docker是一种<strong>轻量级的虚拟化技术</strong>，同时是一个开源的应用容器运行环境搭建平台，可以让开发者以便捷方式打包应用到一个可移植的容器中，然后安装至任何运行Linux或Windows等系统的服务器上。 相较于传统虚拟机，Docker容器提供轻量化的虚拟化方式、安装便捷、启停速度快。</p></blockquote>]]></content>
       
       
       <categories>
