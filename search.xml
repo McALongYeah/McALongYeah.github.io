@@ -4,25 +4,6 @@
   
     
     <entry>
-      <title>Docker</title>
-      <link href="/2023/11/04/Docker/"/>
-      <url>/2023/11/04/Docker/</url>
-      
-        <content type="html"><![CDATA[<h2 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h2><blockquote><p>Docker是一种<strong>轻量级的虚拟化技术</strong>，同时是一个开源的应用容器运行环境搭建平台，可以让开发者以便捷方式打包应用到一个可移植的容器中，然后安装至任何运行Linux或Windows等系统的服务器上。 相较于传统虚拟机，Docker容器提供轻量化的虚拟化方式、安装便捷、启停速度快。</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> Docker </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Redis</title>
       <link href="/2023/11/04/Redis/"/>
       <url>/2023/11/04/Redis/</url>
@@ -33,6 +14,25 @@
       <categories>
           
           <category> Redis </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Docker</title>
+      <link href="/2023/11/04/Docker/"/>
+      <url>/2023/11/04/Docker/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是docker？"><a href="#什么是docker？" class="headerlink" title="什么是docker？"></a>什么是docker？</h2><blockquote><p>Docker是一种<strong>轻量级的虚拟化技术</strong>，同时是一个开源的应用容器运行环境搭建平台，可以让开发者以便捷方式打包应用到一个可移植的容器中，然后安装至任何运行Linux或Windows等系统的服务器上。 相较于传统虚拟机，Docker容器提供轻量化的虚拟化方式、安装便捷、启停速度快。</p></blockquote><h2 id="docker的安装"><a href="#docker的安装" class="headerlink" title="docker的安装"></a>docker的安装</h2><h3 id="下载DockerDesker"><a href="#下载DockerDesker" class="headerlink" title="下载DockerDesker"></a>下载DockerDesker</h3><h3 id="配置Docker环境"><a href="#配置Docker环境" class="headerlink" title="配置Docker环境"></a><strong>配置Docker环境</strong></h3><p><strong>1.启动Hyper服务</strong></p><p><img src="/img/docker/hyper.png"></p><p><strong>如果计算机windows功能中没有Hyper服务</strong></p><p><strong>新建一个文本文件,将下列命令加入</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">pushd &quot;%~dp0&quot;</span><br><span class="line">dir /b %SystemRoot%\servicing\Packages\*Hyper-V*.mum &gt;hyper-v.txt</span><br><span class="line">for /f %%i in (&#x27;findstr /i . hyper-v.txt 2^&gt;nul&#x27;) do dism /online /norestart /add-package:&quot;%SystemRoot%\servicing\Packages\%%i&quot;</span><br><span class="line">del hyper-v.txt</span><br><span class="line">Dism /online /enable-feature /featurename:Microsoft-Hyper-V-All /LimitAccess /ALL</span><br></pre></td></tr></table></figure><p><strong>修改文件名为Hyper.cmd</strong></p><p><strong>以管理员身份运行该程序,运行完毕后，在windows服务中启动该服务即可</strong></p><p><strong>2.检查是否配置成功</strong></p><p><img src="/img/docker/xunihua.png"></p><p><strong>3.配置一些国内镜像站点加速</strong></p><p>在这个配置中，列出了一些常用的国内镜像站点，比如阿里云、网易云、七牛云、中科大和Docker中国官方镜像。这些镜像站点的作用是提供一个与Docker官方镜像仓库相连的代理服务，可以加速Docker镜像的下载和上传过程。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;builder&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;gc&quot;</span>: &#123;</span><br><span class="line">      <span class="string">&quot;defaultKeepStorage&quot;</span>: <span class="string">&quot;20GB&quot;</span>,</span><br><span class="line">      <span class="string">&quot;enabled&quot;</span>: <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;experimental&quot;</span>: <span class="literal">false</span>,</span><br><span class="line">  <span class="string">&quot;registry-mirrors&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;https://bytkgxyr.mirror.aliyuncs.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://hub-mirror.c.163.com/&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://reg-mirror.qiniu.com/&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://docker.mirrors.ustc.edu.cn/&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://registry.docker-cn.com&quot;</span></span><br><span class="line">  ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>4.验证docker环境及其桌面版是否能使用</strong></p><p><strong>powershell 管理员  输入docker version检查版本</strong></p><p><img src="/img/docker/version.png"></p><p><strong>命令窗口输入docker run hello-world验证Docker桌面版</strong> </p><p><img src="/img/docker/hello-world.png"></p><p><strong>至此docker环境搭建完毕</strong></p><h2 id="MySql容器的部署"><a href="#MySql容器的部署" class="headerlink" title="MySql容器的部署"></a>MySql容器的部署</h2><p>搜索MySql镜像:</p><blockquote><p>docker search mysql</p></blockquote><p>拉取mysql8的镜像:</p><blockquote><p>docker pull mysql</p></blockquote><p>利用镜像创建容器:  </p><blockquote><p>docker run  -p 3308:3306 –name mysql_1 -e MYSQL_ROOT_PASSWORD&#x3D;a -d  mysql –character-set-server&#x3D;utf8mb4 –collation-server&#x3D;utf8mb4_unicode_ci</p></blockquote><blockquote><ul><li><code>docker run</code>: Docker命令，用于创建和运行容器。</li><li><code>-p 3308:3306</code>: 指定容器的端口映射，将容器的端口3306映射到主机的端口3308。格式为<code>主机端口:容器端口</code>。</li><li><code>--name mysql_1</code>: 为容器指定名称为mysql_1，方便后续管理。</li><li><code>-e MYSQL_ROOT_PASSWORD=a</code>: 设置MySQL容器的root用户的密码为a。</li><li><code>-d</code>: 让容器在后台运行。</li><li><code>mysql</code>: 指定要使用的Docker镜像，这里使用的是MySQL镜像。</li><li><code>--character-set-server=utf8mb4</code>: 设置MySQL服务器的字符集为utf8mb4。</li><li><code>--collation-server=utf8mb4_unicode_ci</code>: 设置MySQL服务器的字符排序规则为utf8mb4_unicode_ci。</li><li><code>-e MYSQL_ROOT_PASSWORD=a</code>： 连接到该数据库需要密码认证</li></ul></blockquote><p>进入到容器的bash命令行环境: </p><blockquote><p>docker exec -it msql_1 &#x2F;bin&#x2F;bash</p></blockquote><p>创建数据库</p><blockquote><p>create database data_1 default character set&#x3D;’utf8’</p></blockquote><h3 id="桥接模式"><a href="#桥接模式" class="headerlink" title="桥接模式"></a>桥接模式</h3><p> . . . . . .</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Docker </category>
           
       </categories>
       
