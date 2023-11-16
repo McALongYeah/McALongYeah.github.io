@@ -8,7 +8,7 @@
       <link href="/2023/11/13/SpringCloud/"/>
       <url>/2023/11/13/SpringCloud/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="单体应用"><a href="#单体应用" class="headerlink" title="单体应用"></a>单体应用</h2><h3 id="单体应用的缺陷"><a href="#单体应用的缺陷" class="headerlink" title="单体应用的缺陷:"></a>单体应用的缺陷:</h3><blockquote><p>项目越大,代码量越大,造成编译、打包 费时,越来越影响效率</p></blockquote><h3 id="SOA"><a href="#SOA" class="headerlink" title="SOA:"></a>SOA:</h3><blockquote><p>面向服务的架构思想</p><p>SOAP: 基于HTTP + XML; <code>webservice</code> &#x3D;&gt; xml返回的 XML 数据量较大,有大量的数据冗余 例如标签名、属性名等，这会增加数据大小)</p><p>REST: 基于HTTP + JSON; <code>springcloud</code></p><p>RPC: 基于SOCKET的形式； <code>alibaba dubbo</code> 典型的RPC架构;</p></blockquote><p>微服务</p><blockquote><p>nacos (spring cloud v2 -&gt;alibaba)</p></blockquote><p>云服务</p><blockquote><p>saas</p></blockquote><p>CAP</p><blockquote><p>一个分布式系统中,三个中特性只能满足其中两个;</p><p>C: 一致性</p><p>A: 可用性</p><p>P: 分区容错性</p></blockquote>]]></content>
       
       
       <categories>
