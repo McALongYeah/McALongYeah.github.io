@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/11/29/Untitled/"/>
-      <url>/2023/11/29/Untitled/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>设计模式</title>
       <link href="/2023/11/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
       <url>/2023/11/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
@@ -135,7 +122,7 @@
       <link href="/2023/10/30/Spring/"/>
       <url>/2023/10/30/Spring/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h2><blockquote><p>Spring 是一个开源的 JavaEE (Java Enterprise Edition) 应用程序开发框架，它提供了一种轻量级的、非侵入式的编程模型，旨在简化企业级Java应用程序的开发。</p></blockquote>]]></content>
       
       
       <categories>
@@ -154,7 +141,7 @@
       <link href="/2023/10/30/SpringBoot/"/>
       <url>/2023/10/30/SpringBoot/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2 id="SpringBoot"><a href="#SpringBoot" class="headerlink" title="SpringBoot"></a>SpringBoot</h2><blockquote><p>Spring Boot 是一个基于 Spring 框架的快速开发框架，旨在简化 Spring 应用程序的搭建和配置过程。它通过提供一种约定优于配置的方式，集成了许多常用的第三方库和工具，使得开发者可以更加专注于业务逻辑的实现，而不需要花费过多精力在繁琐的配置上。</p></blockquote>]]></content>
       
       
       <categories>
