@@ -4,12 +4,18 @@
   
     
     <entry>
-      <title></title>
+      <title>设计模式</title>
       <link href="/2023/11/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
       <url>/2023/11/28/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</url>
       
-        <content type="html"><![CDATA[<p>title: 设计模式<br>date: 2023-11-28 19:30:00<br>updated: 2023-11-2819:30:00<br>categories: Design Pattern</p><h2 id="builder构造器设计模式"><a href="#builder构造器设计模式" class="headerlink" title="builder构造器设计模式"></a>builder构造器设计模式</h2><p>。。。</p><h2 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h2><blockquote><ol><li>Observer  Observable</li><li>reactor</li><li>webflux.</li></ol></blockquote><p>。。。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="builder构造器设计模式"><a href="#builder构造器设计模式" class="headerlink" title="builder构造器设计模式"></a>builder构造器设计模式</h2><p>。。。</p><h2 id="观察者模式"><a href="#观察者模式" class="headerlink" title="观察者模式"></a>观察者模式</h2><blockquote><ol><li>Observer  Observable</li><li>reactor</li><li>webflux.</li></ol></blockquote><p>。。。</p>]]></content>
       
+      
+      <categories>
+          
+          <category> Design Pattern </category>
+          
+      </categories>
       
       
     </entry>
