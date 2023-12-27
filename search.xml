@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>WebSocket</title>
+      <link href="/2023/12/27/WebSocket/"/>
+      <url>/2023/12/27/WebSocket/</url>
+      
+        <content type="html"><![CDATA[<h2 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h2><h3 id="WebSocket-1"><a href="#WebSocket-1" class="headerlink" title="WebSocket"></a>WebSocket</h3><blockquote><p>WebSocket Protocol一种新的HTML5协议,实现了浏览器与服务器(B&#x2F;S架构)全双工通信,一开始的握手(建立连接，长连接)需要借助HTTP请求完成。</p><p>全双工通信: 同时双向传输数据(A-&gt;B,B-&gt;A),瞬时同步</p><p>WebSocket: 真正实现全双工通信的服务器向客户端推的互联网技术。原理类似广播播音</p><p>WebSocket协议使用较少的开销来维持连接，相对于传统的Socket，它不需要频繁地建立和关闭连接，减少了服务器的负担</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> WebSocket </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>GateWay-网关</title>
       <link href="/2023/12/17/GateWay-%E7%BD%91%E5%85%B3/"/>
       <url>/2023/12/17/GateWay-%E7%BD%91%E5%85%B3/</url>
@@ -137,25 +156,6 @@
     
     
     <entry>
-      <title>Redis</title>
-      <link href="/2023/11/04/Redis/"/>
-      <url>/2023/11/04/Redis/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Redis </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Docker</title>
       <link href="/2023/11/04/Docker/"/>
       <url>/2023/11/04/Docker/</url>
@@ -166,6 +166,25 @@
       <categories>
           
           <category> Docker </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis</title>
+      <link href="/2023/11/04/Redis/"/>
+      <url>/2023/11/04/Redis/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
           
       </categories>
       
