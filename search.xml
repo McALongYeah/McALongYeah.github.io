@@ -156,25 +156,6 @@
     
     
     <entry>
-      <title>Redis</title>
-      <link href="/2023/11/04/Redis/"/>
-      <url>/2023/11/04/Redis/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Redis </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Docker</title>
       <link href="/2023/11/04/Docker/"/>
       <url>/2023/11/04/Docker/</url>
@@ -185,6 +166,25 @@
       <categories>
           
           <category> Docker </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis</title>
+      <link href="/2023/11/04/Redis/"/>
+      <url>/2023/11/04/Redis/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Redis </category>
           
       </categories>
       
