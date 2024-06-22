@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>RabbitMQ</title>
+      <link href="/2024/04/01/RabbitMQ/"/>
+      <url>/2024/04/01/RabbitMQ/</url>
+      
+        <content type="html"><![CDATA[<h1 id="RabbitMQ"><a href="#RabbitMQ" class="headerlink" title="RabbitMQ"></a>RabbitMQ</h1><h2 id="什么是RabbitMQ"><a href="#什么是RabbitMQ" class="headerlink" title="什么是RabbitMQ?"></a>什么是RabbitMQ?</h2><blockquote><p>高性能的异步通信组件</p><p>时效性差，并发性能高</p></blockquote><h2 id="同步异步调用"><a href="#同步异步调用" class="headerlink" title="同步异步调用"></a>同步异步调用</h2><h3 id="同步调用"><a href="#同步调用" class="headerlink" title="同步调用"></a>同步调用</h3><blockquote><p>同步调用的优势：</p><p>时效性强，等待到结果后才返回</p><p>问题：</p><p>拓展性差</p><p>性能下降</p><p>级联失败问题</p></blockquote><h3 id="异步调用"><a href="#异步调用" class="headerlink" title="异步调用"></a>异步调用</h3><blockquote><p>异步调用的三个角色</p><p>消息发送者：投递消息的人，调用方</p><p>消息代理：管理、暂存、转发消息</p><p>消息接收者： 接受消息的人，服务提供方</p><p>优势：</p><p>解除耦合，拓展性强</p><p>无需等待，性能好</p><p>故障隔离</p><p>缓存消息，流量削峰填谷</p><p>问题：</p><p>不能及时得到调用结果，时效性差</p><p>不能确定下游业务是否成功</p><p>业务安全完全依赖于消息代理（Broker）的可靠性</p></blockquote><h2 id="RabbitMQ开始"><a href="#RabbitMQ开始" class="headerlink" title="RabbitMQ开始"></a>RabbitMQ开始</h2><p>Docker镜像拉取</p><blockquote><p>docker pull rabbitmq</p></blockquote><blockquote><p>如果拉取镜像部署完，并且端口已开放，还是无法访问，这说明RabbitMQ管理插件未启用，进入容器后，输入rabbitmq-plugins enable rabbitmq_management 即可</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> RabbitMQ </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Redis-分布式锁</title>
       <link href="/2024/03/30/Redis-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/"/>
       <url>/2024/03/30/Redis-%E5%88%86%E5%B8%83%E5%BC%8F%E9%94%81/</url>
