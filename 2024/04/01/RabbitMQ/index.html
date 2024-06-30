@@ -416,18 +416,18 @@
 <blockquote>
 <p>因为topic.queue1绑定的为china.#,topic.queue2绑定的为*.news两者都满足</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="E:\MyBlogger\github_Blogger\McALongYeah\source\img\rabbitmq\t1.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/rabbitmq/t1.png"></p>
 <p><strong>测试2</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">      <span class="keyword">void</span> <span class="title function_">testSendTopic2</span><span class="params">()</span>&#123;</span><br><span class="line">          <span class="type">String</span> <span class="variable">exchange</span> <span class="operator">=</span> <span class="string">&quot;hmall.topic&quot;</span>;</span><br><span class="line">          <span class="type">String</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="string">&quot;china weather&quot;</span>;</span><br><span class="line">          rabbitTemplate.convertAndSend(exchange,<span class="string">&quot;china.weather&quot;</span>,msg);</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>c1的bindingKey是china.#,故c1收到消息</p>
 </blockquote>
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="E:\MyBlogger\github_Blogger\McALongYeah\source\img\rabbitmq\t2.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/rabbitmq/t2.png"></p>
 <p><strong>测试3</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line">      <span class="keyword">void</span> <span class="title function_">testSendTopic3</span><span class="params">()</span>&#123;</span><br><span class="line">          <span class="type">String</span> <span class="variable">exchange</span> <span class="operator">=</span> <span class="string">&quot;hmall.topic&quot;</span>;</span><br><span class="line">          <span class="type">String</span> <span class="variable">msg</span> <span class="operator">=</span> <span class="string">&quot;word news&quot;</span>;</span><br><span class="line">          rabbitTemplate.convertAndSend(exchange,<span class="string">&quot;word.news&quot;</span>,msg);</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="E:\MyBlogger\github_Blogger\McALongYeah\source\img\rabbitmq\t3.png"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/rabbitmq/t3.png"></p>
 <h2 id="声明队列交换机"><a href="#声明队列交换机" class="headerlink" title="声明队列交换机"></a>声明队列交换机</h2><h3 id="声明队列交换机-1"><a href="#声明队列交换机-1" class="headerlink" title="声明队列交换机"></a>声明队列交换机</h3><blockquote>
 <p>Queue:  用于声明队列，可以用工厂类QueueBuilder构建</p>
 <p>Exchange:  用于声明交换机，可以用工厂类ExchangeBuilder构建</p>
