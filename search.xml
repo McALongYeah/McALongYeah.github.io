@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/07/10/%E5%AE%9D%E5%85%B8/"/>
+      <url>/2024/07/10/%E5%AE%9D%E5%85%B8/</url>
+      
+        <content type="html"><![CDATA[<p>title: 宝典<br>date: 2024-4-29 19:30:00<br>updated: 2024-4-29 19:30:00<br>categories: resource</p><h2 id="SpringBoot自动装配的原理"><a href="#SpringBoot自动装配的原理" class="headerlink" title="SpringBoot自动装配的原理"></a>SpringBoot自动装配的原理</h2><blockquote><p>@SpringBootApplication:</p><p>1.@SpringBootConfiguration：声明这是一个配置类，与@Configuration作用相同</p><p>2.@ComponentScan：组件扫描，扫面当前引导类所在包及其子包</p><p>3.@EnableAutoConfiguration：实现自动化配置的核心注解。</p><p>-3.1 @Import({AutoConfigurationImportSelector.class})  导入自动配置选择器到spring容器中。</p><p>-导入AutoConfigurationImportSelector.class，会将META-INF下面的spring.factories文件加载到spring容器中。</p><p>-springfactories文件中有许多以AutoConfiguration结尾的类，但不是所有的类都会加载进来</p><p>只有满足了自动配置类中的@ConditionalOnClass的条件判断的注解中对应字节码文件，才会将该配置类中的所有Bean放入Spring容器中使用</p></blockquote><h2 id="Spring框架中常用的注解"><a href="#Spring框架中常用的注解" class="headerlink" title="Spring框架中常用的注解"></a><strong>Spring框架中常用的注解</strong></h2><h3 id="Spring的常见的注解"><a href="#Spring的常见的注解" class="headerlink" title="Spring的常见的注解"></a>Spring的常见的注解</h3><blockquote><p>@Component、@Controller、@Service、@Repository：使用在类上，实例化Bean。</p><p>@Autowired：使用在字段上，根据类型依赖注入。</p><p>@Qualifier：结合@Autowired使用，根据名称进行依赖注入。</p><p>@Scope：标注bean的范围。</p><p>@Configuration：声明配置类。</p><p>@ComponentScan：扫描包。</p><p>@Bean：使用在方法上，将返回值存储到spring容器。</p><p>@Import：导入的类会被加载到spring容器中。</p><p>@Aspect、@Before、@After、@Around、@Pointcut：用于切面编程(AOP)。</p></blockquote><h3 id="SpringMVC中的注解"><a href="#SpringMVC中的注解" class="headerlink" title="SpringMVC中的注解"></a>SpringMVC中的注解</h3><blockquote><p>@RequestMapping：映射请求路径，表示类中的方法都是以该地址作为父路径，可作用在类上和方法上。</p><p>@RequestBody：接收Http请求的json数据，并将json数据转换为java对象。</p><p>@RequestParam：指定请求参数名。</p><p>@PathViriable：从请求路径上获取参数{&#x2F;user&#x2F;id}。</p><p>@ResponseBody：将controller方法返回的对象转换为json对象响应给客户端。</p><p>@RequestHeader：获取指定请求头数据。</p><p>@RequestController：声明是控制类。</p></blockquote><h3 id="SpringBoot中的注解"><a href="#SpringBoot中的注解" class="headerlink" title="SpringBoot中的注解"></a>SpringBoot中的注解</h3><blockquote><p>@SpringBootConfiguration：组合Configuration实现配置文件的功能</p><p>@ComponentScan：组件扫描</p><p>@EnableAutoConfiguration：打开自动配置功能</p></blockquote>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>RabbitMQ</title>
       <link href="/2024/04/01/RabbitMQ/"/>
       <url>/2024/04/01/RabbitMQ/</url>
